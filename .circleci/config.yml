@@ -12,7 +12,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: root
     steps:
       - checkout
-      - run: cp .env.testing.example .env.testing
+      - run: cp .env.example .env
       # composer cache
       - restore_cache:
           keys:
